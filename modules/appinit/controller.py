@@ -1,7 +1,12 @@
 from fastapi import APIRouter
 
+from .services.sqlqueries import create_tabels
+
 routes = APIRouter(prefix="/Initialization", tags=["Initialization"])
 
-@routes.get("/getOne")
-async def getOne():
-    return 1
+@routes.post("/initializate")
+async def initializate():
+
+    await create_tabels()
+
+    return True
