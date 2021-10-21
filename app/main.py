@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from database.core import database
-from routes import routes
+from app.database.core import database
+from .routes import routes
 
 app = FastAPI(title="School")
 

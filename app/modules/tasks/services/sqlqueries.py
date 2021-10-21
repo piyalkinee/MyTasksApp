@@ -1,6 +1,6 @@
 import datetime
 
-from database.core import database
+from app.database.core import database
 
 
 async def insert_group(group_name: str):

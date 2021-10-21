@@ -1,4 +1,4 @@
-from database.core import database
+from app.database.core import database
 
 
 async def create_tabels():
